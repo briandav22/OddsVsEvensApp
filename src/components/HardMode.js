@@ -79,8 +79,7 @@ export default class HardMode extends React.Component {
         <p style= {padLeftEvenMore}> {"<p class> {userChoice}</p>"}</p>
         <p style={padLeftMore}>{"</div>"}</p>
         <p style={padLeft}>);</p>
-        <p style={padLeftMore}>userChoice = 'Even Number'</p>
-        <p style={padLeft}>{"} "}</p>
+
         <p>{"} "}</p>
         </code>
                 </div>
