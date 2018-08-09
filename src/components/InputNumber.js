@@ -33,7 +33,7 @@ export default class InputNumber extends React.Component {
                     <form  className = "form-inline" onSubmit={this.submitNumber}>
                         
                         {/* <input className="add-option__input" type="text" name="option" /> */}
-						<input className="form-control" name="option" type="text" />
+						<input className="form-control" name="option" type="number" />
                         <button className="btn btn-primary ">Submit your Number</button>
                     </form>
     

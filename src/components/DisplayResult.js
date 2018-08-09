@@ -21,6 +21,7 @@ export default class displayResult extends React.Component {
 			
 
 			const evalMe = (user_input) => {
+				
 				user_input = user_input.toString();
 				const r={
 					0:'EVEN',
@@ -40,6 +41,12 @@ export default class displayResult extends React.Component {
 				return( r[result]);
 			};
 			if (this.props.state.selectedOption != null){
+
+				console.log(typeof(this.props.state.selectedOption))
+
+				let tryMe = parseInt(this.props.state.selectedOption)
+
+				console.log(typeof(tryMe))
 			
 			userChoice.push(evalMe(this.props.state.selectedOption));}
 
