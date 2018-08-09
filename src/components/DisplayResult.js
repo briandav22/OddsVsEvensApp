@@ -14,16 +14,43 @@ export default class displayResult extends React.Component {
         render() {
 			let padBottom = {
 				paddingBottom: "20px",
-				color: 'red'
+				color: 'green'
 			}
-		
-			let userChoice = this.props.state.selectedOption;
-			if (userChoice){
-				if (userChoice % 2 != 0){
-					userChoice = 'Odd Number';
+			
+			let userChoice = ['']
+			
+
+			const evalMe = (user_input) => {
+				user_input = user_input.toString();
+				const r={
+					0:'EVEN',
+					1:'ODD',
+					2:'EVEN',
+					3:'ODD',
+					4:'EVEN',
+					5:'ODD',
+					6:'EVEN',
+					7:'ODD',
+					8:'EVEN',
+					9:'ODD',
+				};
+			
+				let result = user_input.slice(-1);
+			
+				return( r[result]);
+			};
+			if (this.props.state.selectedOption != null){
+			
+			userChoice.push(evalMe(this.props.state.selectedOption));}
+
+
+
+			if (userChoice ){
+				if (userChoice[1] ==='ODD'){
+					
 					padBottom.color = 'red'
 				}else {
-					userChoice = 'Even Number';
+					
 					padBottom.color = 'green'
 				}
 			}
